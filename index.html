@@ -1,0 +1,80 @@
+<!DOCPYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Мед</title>
+  </head>
+  <body>
+    <h1 id="title">Вам сподобався наш мед?</h1>
+    <p id="description">
+      Дякуємо, що знайшли час, щоб допомогти нам стати кращими
+    </p>
+    <form id="survey-form" action="">
+      <fieldset class="user-data">
+        <label id="name-label" for="name"
+          >Ім'я
+          <input id="name" type="text" placeholder="Введіть ім'я" required />
+        </label>
+        <label id="email-label" for="email"
+          >Електронна пошта
+          <input
+            id="email"
+            type="email"
+            placeholder="Введіть свою електрону адресу"
+            required
+          />
+        </label>
+        <label id="number-label" for="number"
+          >Вік(необов'язково)
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="18"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Який ваш улюблений мед</p>
+        <label for="dropdown">
+          <select id="dropdown">
+            <option value="0">зробіть вибір</option>
+            <option value="1">Акаційовий</option>
+            <option value="2">Липовий</option>
+            <option value="3">Гречаний</option>
+            <option value="4">Соняшниковий</option>
+            <option value="5">Інший</option>
+          </select>
+        </label>
+        <label
+          ><input type="radio" value="liquid" name="honey-status" /> рідкий
+        </label>
+        <label
+          ><input type="radio" value="crystallized" name="honey-status" />
+          кристалізований
+        </label>
+        <p>тара якого об'єму вам зручна</p>
+        <label class="volume"
+          ><input value="0.25" type="checkbox" /> 0.25 л.</label
+        >
+        <label class="volume"
+          ><input value="0.5" type="checkbox" /> 0.5 л.</label
+        >
+        <label class="volume"><input value="1" type="checkbox" /> 1 л.</label>
+        <label class="volume"><input value="3" type="checkbox" /> 3 л.</label>
+      </fieldset>
+      <fieldset>
+        <label for="comment">
+          <textarea id="comment" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Надіслати" />
+    </form>
+  </body>
+</html>
+
+
